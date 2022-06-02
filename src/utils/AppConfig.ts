@@ -1,6 +1,7 @@
 export const AppConfig = {
-  site_name: 'Starter',
-  title: 'Nextjs Starter',
-  description: 'Starter code for your Nextjs Boilerplate with Tailwind CSS',
-  locale: 'en',
+  site_name: 'HouseForSale',
+  title: 'HouseForSale',
+  description:
+    'Este es el lugar en el que podras encontrar tu nueva casa. Una plataforma para todo el proceso de comprar tu nuevo hogar',
+  locale: 'es',
 };

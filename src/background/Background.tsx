@@ -5,8 +5,12 @@ type IBackgroundProps = {
   color: string;
 };
 
-const Background = (props: IBackgroundProps) => (
-  <div className={props.color}>{props.children}</div>
-);
+const Background = (props: IBackgroundProps) => {
+  return (
+    <div>
+      <article className={props.color}>{props.children}</article>
+    </div>
+  );
+};
 
 export { Background };
