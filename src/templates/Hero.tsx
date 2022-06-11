@@ -1,5 +1,4 @@
 import Link from 'next/link';
-import { useRouter } from 'next/router';
 
 import { Background } from '../background/Background';
 import { Button } from '../button/Button';
@@ -9,9 +8,8 @@ import { NavbarTwoColumns } from '../navigation/NavbarTwoColumns';
 import { Logo } from './Logo';
 
 const Hero = () => {
-  const router = useRouter();
   return (
-    <Background color="bg-gray-100">
+    <Background color="bg-gray-100 max-w-screen-2xl">
       <Section yPadding="py-6">
         <NavbarTwoColumns logo={<Logo xl />}>
           <li>
@@ -26,31 +24,44 @@ const Hero = () => {
           </li>
         </NavbarTwoColumns>
       </Section>
-
-      <Section yPadding="pt-20 pb-32">
-        <HeroOneButton
-          title={
-            <>
-              {'Busca, Compara y Compra en un solo lugar\n'}
-              <span className="text-primary-500">Compra tu nueva Casa</span>
-            </>
-          }
-          description="de forma facil, rapida y con la mayor seguridad."
-          button={
-            <Link href="/">
-              <a>
-                <Button xl>Quiero mi casa nueva</Button>
-              </a>
-            </Link>
-          }
-        />
-        <article className="relative col-span-3 row-span-2">
-          <img
-            src={`${router.basePath}/assets/images/background.png`}
-            className="absolute inset-0 w-full h-full object-cover bg-gray-100"
-          />
-        </article>
-      </Section>
+      <header>
+        {/* Background image */}
+        <div
+          className="relative overflow-hidden bg-no-repeat bg-cover"
+          style={{
+            backgroundPosition: '50%',
+            backgroundImage: 'url("/assets/images/background3.png")',
+            height: 500,
+          }}
+        >
+          <div
+            className="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed"
+            style={{ backgroundColor: 'rgba(0, 0, 0, 0.70)' }}
+          >
+            <Section yPadding="pt-20 pb-32 text-white">
+              <HeroOneButton
+                title={
+                  <>
+                    {'Busca, Compara y Compra en un solo lugar\n'}
+                    <span className="text-primary-500">
+                      Compra tu nueva Casa
+                    </span>
+                  </>
+                }
+                description="de forma facil, rapida y con la mayor seguridad."
+                button={
+                  <Link href="/">
+                    <a>
+                      <Button xl>Quiero mi casa nueva</Button>
+                    </a>
+                  </Link>
+                }
+              />
+            </Section>
+          </div>
+        </div>
+        {/* Background image */}
+      </header>
     </Background>
   );
 };

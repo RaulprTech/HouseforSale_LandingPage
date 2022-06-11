@@ -9,7 +9,7 @@ type ICTABannerProps = {
 export default function CTABanner(props: ICTABannerProps) {
   return (
     <div className="bg-primary-800">
-      <div className="max-w-7xl mx-auto py-3 px-3 sm:px-6 lg:px-8">
+      <div className="max-w-6xl mx-auto py-3 px-3 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between flex-wrap">
           <div className="w-0 flex-1 flex items-center">
             <span className="flex p-2 rounded-lg bg-primary-700">

@@ -46,21 +46,37 @@ const Footer = () => (
           </>
         }
       >
-        <div className="w-screen pt-4 flex flex-col sm:flex-row space-y-2  justify-end flex-1">
+        <div className="w-screen pt-4 flex flex-col sm:flex-row space-y-2 items-center justify-between flex-1 text-base">
           <div className="w-full sm:w-1/5 flex flex-col space-y-4">
             <Link href="/">
-              <a className="opacity-60">Acerca de</a>
+              <a className="opacity-60">Explorar</a>
             </Link>
-            <Link href="/">
-              <a className="opacity-60">Contacto</a>
+            <Link href="">
+              <a className="opacity-60">Soy agente</a>
             </Link>
           </div>
           <div className="w-full sm:w-1/5 flex flex-col space-y-4">
-            <Link href="/">
+            <Link href="">
               <a className="opacity-60">Politica de Privacidad</a>
             </Link>
-            <Link href="/">
+            <Link href="">
               <a className="opacity-60">Terminos de Servicio</a>
+            </Link>
+          </div>
+          <div className="w-full sm:w-1/5 flex flex-col space-y-4">
+            <Link href="">
+              <a className="opacity-60">Acerca de</a>
+            </Link>
+            <Link href="https://raulpacheco.netlify.app/blog">
+              <a className="opacity-60">Blog</a>
+            </Link>
+          </div>
+          <div className="w-full sm:w-1/5 flex flex-col space-y-4">
+            <Link href="https://raulpacheco.netlify.app/projects">
+              <a className="opacity-60">Mas proyectos</a>
+            </Link>
+            <Link href="https://raulpacheco.netlify.app/houseforsale">
+              <a className="opacity-60">Como fue hecho este sitio</a>
             </Link>
           </div>
         </div>

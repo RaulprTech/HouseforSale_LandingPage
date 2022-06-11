@@ -6,7 +6,7 @@ import TableFeatures from './TableFeatures';
 import { VerticalFeatures } from './VerticalFeatures';
 
 const Base = () => (
-  <div className="antialiased text-gray-600">
+  <div className="antialiased text-gray-600 bg-green-100 m-0">
     <Meta title={AppConfig.title} description={AppConfig.description} />
     <Hero />
     <VerticalFeatures />

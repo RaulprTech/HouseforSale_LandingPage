@@ -5,8 +5,8 @@ import ElementFeatureTable from '../feature/ElementFeatureTable';
 export default function TableFeatures() {
   return (
     <div>
-      <div className="py-12">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="py-8 bg-gray-100">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="lg:text-center">
             <h2 className="text-base text-black font-semibold tracking-wide uppercase">
               Proceso
@@ -26,7 +26,7 @@ export default function TableFeatures() {
             <dl className="space-y-10 md:space-y-0 md:grid md:grid-cols-2 md:gap-x-8 md:gap-y-10">
               <ElementFeatureTable
                 title="Empieza tu busqueda desde cualquier lugar"
-                description="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione."
+                description="Adios a las excusas, tu nuevo hogar te esta esperando a solo unos clicks de distancia. Comienza a elegir tu nuevo hogar desde cualquier parte."
                 icon={
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -51,7 +51,7 @@ export default function TableFeatures() {
               />
               <ElementFeatureTable
                 title="Tu seguridad es primero"
-                description="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione."
+                description="Compra tu hogar sin preocuparte de arriesgar tu dinero. Supervisamos el proceso de inicio a fin para tu y tu dinero siempre esten seguros"
                 icon={
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -71,7 +71,7 @@ export default function TableFeatures() {
               />
               <ElementFeatureTable
                 title="Proceso Sencillo y Rapido"
-                description="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione."
+                description="Mas facil imposible. Te acercamos a todo el proceso, para que puedas bascar, comparar y comprar tu nuevo hogar con solo unos clicks"
                 icon={
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -90,8 +90,8 @@ export default function TableFeatures() {
                 }
               />
               <ElementFeatureTable
-                title="Soporte via chat durante todo el proceso"
-                description="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione."
+                title="Comunicacion durante todo el proceso"
+                description="Tienes dudas sobre el proceso de compra, la casa que te ha gustado o lo que sea. No dudes en preguntar, estamos siempre atentos de ti y de tus necesidades"
                 icon={
                   <svg
                     xmlns="http://www.w3.org/2000/svg"

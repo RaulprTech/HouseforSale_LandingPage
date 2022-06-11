@@ -19,18 +19,15 @@ const CenteredFooter = (props: ICenteredFooterProps) => (
       </ul>
     </nav>
 
-    <div className="mt-8 flex justify-center">
+    <div className="mt-8 flex justify-between">
       <FooterIconList>{props.iconList}</FooterIconList>
-    </div>
-
-    <div className="mt-8 text-sm w-screen">
       <FooterCopyright />
     </div>
 
     <style jsx>
       {`
         .navbar :global(li) {
-          @apply mx-4;
+          @apply mx-2;
         }
       `}
     </style>
